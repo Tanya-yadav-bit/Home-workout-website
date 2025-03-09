@@ -1,0 +1,552 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Bar Styling */
+        .navbar {
+            background-color: #f8911c;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0.5em 0;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            font-size: 1em;
+        }
+
+        .navbar a:hover {
+            background-color: #ff7b0f;
+            border-radius: 5px;
+        }
+
+        /* Active link */
+        .navbar .active {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8911c;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.navbar ul li .signup-btn {
+    background-color: #51e951;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar ul li .signup-btn:hover {
+    background-color: #60e03f;
+}
+
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    color: #ffffff;
+    background-image: url('images/back.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    transition: text-shadow 0.3s;
+    
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    color: white;
+    background-color: #ff922b;
+    text-decoration: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+    }
+
+
+.cta-button:hover{
+    background-color: #07fd40;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.scroll{
+    background-color: #000000;
+    margin: 0px;
+}
+/* Container to keep the animation confined */
+.moving-container {
+    overflow: hidden;
+    width: 100%; /* Adjust width as needed */
+    background-color: #f5f5f5; /* Optional background */
+    border: 5px solid #ddd; /* Optional border */
+    padding: 0px;
+    display: contents;
+}
+
+/* Moving Text Style */
+.moving-text {
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff4500; /* Vibrant orange to grab attention */
+    text-transform: uppercase;
+    text-decoration: none;
+    animation: scrollText 10s linear infinite;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Animation Keyframes */
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+
+.cta-button {
+    animation: pulse 1.5s infinite;
+}
+
+/* Workout Section */
+.workout-section {
+    padding: 50px 20px;
+    background:url("images/workoutbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.workout-section p{
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 360px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-align: center;
+    font-weight: bold;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.workout-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.workout-card {
+    margin-top: 20px;
+    width: 270px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.workout-card:hover {
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Motivation Section*/
+.motive-section {
+    padding: 50px 20px;
+    background: url("images/workoutbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.motive-section p {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 10px;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: center;
+    font-weight: bold;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+}
+
+.motive-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.motive-card {
+    margin-top: 20px;
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.motive-card:hover {
+    transform: scale(1.05);
+}
+
+/* Mental Wellness Section */
+.mwell-section {
+    padding: 50px 20px;
+    background: url("images/workoutbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.mwell-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mwell-card {
+    margin: 20px auto;
+    width: 250px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.mwell-card:hover {
+    transform: scale(1.05);
+}
+
+.mwell-section p {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    line-height: 1.5;
+    max-width: 800px;
+    text-align: center;
+    font-weight: bold;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    
+}
+
+/* About Section */
+
+.about-section {
+    padding: 50px 20px;
+    background-image: url('images/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    transition: text-shadow 0.3s;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin-left: 350px;
+    line-height: 1.5;
+    max-width: 600px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+    transition: text-shadow 0.3s;
+}
+
+.about-section p {
+    font-size: 30px;
+    margin-top: 180px;
+    margin-left: 150px;
+    line-height: 1.5;
+    max-width: 1000px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    word-wrap: break-word;
+    text-decoration-thickness: 2px;
+    letter-spacing: 1px;
+}
+
+
+.contact-section {
+    padding: 50px 20px;
+    background: url("images/contactbg.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #12f337;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-contact p,
+.footer-contact a {
+    margin: 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #4CAF50;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}

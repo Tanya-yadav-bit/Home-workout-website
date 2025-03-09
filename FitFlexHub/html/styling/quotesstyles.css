@@ -1,0 +1,199 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("images/cycle.jpg");
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #000000;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    background-color: #4f4dda;
+    border-radius: 5px;
+}
+
+/* Active link */
+.navbar .active {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.header {
+    background-color: #f8911c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.quotes-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.quote-card {
+    width: 300px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: scale(1.05);
+}
+
+.quote-card .quote {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quote-card .author {
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.back-to-top-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #2563d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-top-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-logo {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-logo img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.footer-links,
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #4CAF50;
+}
+
+.footer-contact p,
+.footer-contact a {
+    margin: 5px 0;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: #4CAF50;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover img {
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+}
